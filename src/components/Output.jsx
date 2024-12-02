@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { CodeContext } from '../context/EditorContext'
 
 function Output() {
-    let { html, sethtml, css, setcss, js, setjs } = useContext(CodeContext)
+    let { html, css, js,} = useContext(CodeContext)
     let [srcDoc, setSrcDoc] = useState('');
     console.log(html);
 

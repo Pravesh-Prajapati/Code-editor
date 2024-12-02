@@ -2,15 +2,11 @@ import React, { useContext, useEffect, useRef } from 'react'
 import { CodeContext } from '../context/EditorContext'
 
 function Home() {
-    let { html, sethtml, css, setcss, js, setjs } = useContext(CodeContext)
-
-
-   
+    let {  sethtml, setcss, setjs } = useContext(CodeContext)
 
     let sethtmlinput = (e) => {
         // console.log(e.target.value);
         sethtml(e.target.value)
-
     }
     let setcssinput = (e) => {
         // console.log(e.target.value);
@@ -20,8 +16,6 @@ function Home() {
         // console.log(e.target.value);
         setjs(e.target.value)
     }
-
-
     return (
         <div>
             <div className="mx-auto">
